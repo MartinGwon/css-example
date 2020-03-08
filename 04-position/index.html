@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: black;
+      }
+      .abs-box {
+        height: 400px;
+        width: 400px;
+        background-color: red;
+        position: relative;
+        left: 50px;
+      }
+      .abs-child {
+        height: 100px;
+        width: 100px;
+        background-color: yellowgreen;
+        position: absolute;
+        left: 50px;
+        right: 0px;
+        top: 50px;
+      }
+      /* #boxone {
+        height: 300px;
+        width: 300px;
+        background-color: yellowgreen;
+        position: static;
+      }
+      #boxtwo {
+        height: 100px;
+        width: 100%;
+        background-color: violet;
+        position: fixed;
+        top: 50px;
+        bottom: 30%;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+    <!-- <div id="boxone">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxtwo">
+      <div class="box-child"></div>
+    </div> -->
+  </body>
+</html>

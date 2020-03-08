@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transformations</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .contain {
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        animation: 1.5s DoBarrelRoll infinite ease-in-out;
+      }
+      @keyframes DoBarrelRoll {
+        0% {
+          transform: none;
+        }
+        25% {
+          transform: rotate(1turn) scale(1.25, 1.25);
+          background-color: turquoise;
+        }
+        50% {
+          background-color: blue;
+          transform: rotate(2turn) scale(1.5, 1.5);
+        }
+        100% {
+          background-color: red;
+          transform: rotate(3turn);
+        }
+      }
+    </style>
+  <body>
+    <div class="contain">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
